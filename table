@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UI组件之排序表格</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	table{
+		text-align: center;
+		margin: 10px auto;
+		border:1px solid gray;
+		border-collapse: 0px;/*删除重复的边框*/
+		border-spacing: 0px; /*删除重复边框*/
+		 
+	}
+	thead{
+		background-color: rgb(100,100,100);
+		border:1px solid gray;
+		color: white;
+	}
+	td{
+		width: 100px;
+		border:1px solid gray;
+		/*添加内部边框*/
+	}
+	.item{
+		float: right;
+		clear: both;
+		margin-bottom: 3px;
+		margin-top: 5px;
+		
+	}
+	.dot-top1{
+		font-size: 0;
+		line-height: 0;
+		border-width: 5px;
+		border-color: white;
+		border-top-width: 0px;
+		border-style: dashed;
+		border-bottom-style: solid;
+		border-left-color: transparent;
+		border-right-color: transparent;
+
+
+	}
+	.dot-bottom1{
+		font-size: 0;
+		line-height: 0;
+		border-width: 5px;
+		border-color: white;
+		border-bottom-width: 0px;
+		border-style: dashed;
+		border-top-style: solid;
+		border-left-color: transparent;
+		border-right-color: transparent;		 
+	}
+	.dot-top2{
+		 width: 0;
+		 height: 0;
+		 border-left: 5px solid transparent;
+		 border-right: 5px solid transparent;
+		 border-bottom: 5px solid white;
+	}
+	.dot-bottom2{
+		width: 0;
+		height: 0;
+		border-left: 5px solid transparent;
+		border-right:5px solid transparent;
+		border-top: 5px solid white;
+	}
+	.dot-top3{
+		width: 0;
+		height: 0;
+		border: 5px solid transparent;
+		border-bottom: 5px solid white;
+	}
+	.dot-bottom3{
+		width: 0;
+		height: 0;
+		border: 5px solid transparent;
+		border-top: 5px solid white;
+	}
+	</style>
+</head>
+<body>
+<table>
+	<thead class="h">
+		<tr>
+			<td>姓名</td>
+			<td>语文 
+			<span class="item dot-top1"></span>
+			<span class=" item dot-bottom1"></span>
+			</td>
+			<td>数学
+			<span class="item dot-top2"></span>
+			<span class=" item dot-bottom2"></span>
+            </td>
+			<td>英语
+				<span class="item dot-top3"></span>
+			<span class=" item dot-bottom3"></span>
+			</td>
+			<td>总分
+			<span class="item dot-top3"></span>
+			<span class=" item dot-bottom3"></span>
+			</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>小明</td>
+			<td>80</td>
+			<td>90</td>
+			<td>70</td>
+			<td>240</td>
+		</tr>
+		<tr>
+			<td>小红</td>
+			<td>90</td>
+			<td>60</td>
+			<td>90</td>
+			<td>240</td>
+		</tr>
+		<tr>
+			<td>小亮</td>
+			<td>90</td>
+			<td>60</td>
+			<td>70</td>
+			<td>220</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
