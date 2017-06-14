@@ -1,0 +1,224 @@
+<html>
+<head>
+	<title>css3新特性练习</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	.table{
+		text-align: center;
+		margin: 10px auto auto auto;
+		color: red;
+		font-size: 12px;
+	}
+	
+	 
+	.table tr:nth-child(odd){
+		background-color: gray;
+	}
+	.table tr:nth-child(even){
+		background-color:white ;
+	}
+	.table tr:first-child{
+		background-color: black;
+		color: white;
+	}
+	.table tr:nth-child(n+5){  
+		/*不明白为什么是5啊，我设4只有前三行变化，是不是表示第几行呢，这样才合理*/
+		color: black;
+	}
+	input{
+		display: block;
+		text-align: center;
+		margin: 20px auto 20px;
+	}
+	.t1{
+		width: 100px;
+	}
+	.t2{
+		border: 3px solid blue;
+	}
+	.box1,.box2,.box3{
+		background-color: green;
+		width: 300px;
+		height: 200px;
+		position: relative;
+		margin: 10px auto;
+		text-align: center;
+	}
+	.b1 {
+		border: 1px solid blue;
+		width: 30px;
+		position: absolute;
+		right:  80px; 
+		bottom: 0px;
+		background-color: red;
+	}
+	.b2 {
+		border: 1px solid blue;
+		width: 30px;
+		position: absolute;
+		right: 40px;
+		bottom: 0px;
+		background-color: red;
+	}
+	 .b3{
+		border: 1px solid blue;
+		width: 30px;
+		position: absolute;
+		right: 0px;
+		bottom: 0px;
+		background-color: red;
+		 
+	}
+	a{
+		text-decoration: none;
+		color: black;
+		
+	}
+	.box21{
+		width: 150px;
+		background-color: blue;
+		height: 200px;
+		position: relative;		 
+	}
+	.box3{
+		background-color: blue;
+		width: 300px;
+		height: 200px;
+		position: relative;
+	
+		text-align: center;
+	}
+	.box4{
+		width: 300px;
+		height: 200px;
+		background-color: green;
+		position: relative;
+		margin: 0 auto;
+		text-align: center;
+		line-height: 200px;
+	}
+	.box41{
+		position: absolute;
+		left: 0px;
+		width: 100px;
+		height: 200px;
+		background-color: rgb(100,200,210);
+
+	}
+	.box43{
+		position: absolute;
+		right: 0px;
+		width: 100px;
+		height: 200px;
+		background-color: rgb(200,200,200);
+	}
+	.box42{
+		position: absolute;
+		left: 100px;
+		width: 100px;
+		height: 200px;
+		background-color: rgb(100,100,100);
+	}
+
+	</style>
+</head>
+<body>
+<table class="table">
+	<tr class="hhead">
+		 
+			<th>排名</th>
+			<th>网站</th>
+			<th>热度</th>
+		 
+	</tr>
+	<tr>
+		<td>1.</td>
+		<td>百度前端学院</td>
+		<td>13000</td>
+	</tr>
+	<tr>
+		<td>2.</td>
+		<td>百度前端学院</td>
+		<td>12000</td>
+	</tr>
+	<tr>
+		<td>3.</td>
+		<td>百度前端学院</td>
+		<td>11000</td>
+	</tr>
+	<tr>
+		<td>4.</td>
+		<td>百度前端学院</td>
+		<td>10000</td>
+	</tr>
+	<tr>
+		<td>5.</td>
+		<td>百度前端学院</td>
+		<td>9000</td>
+	</tr>
+	<tr>
+		<td>6.</td>
+		<td>百度前端学院</td>
+		<td>8000</td>
+	</tr>
+	<tr>
+		<td>7.</td>
+		<td>百度前端学院</td>
+		<td>7000</td>
+	</tr>
+	<tr>
+		<td>8.</td>
+		<td>百度前端学院</td>
+		<td>6000</td>
+	</tr>
+	<tr>
+		<td>9.</td>
+		<td>百度前端学院</td>
+		<td>5000</td>
+	</tr>
+	<tr>
+		<td>10.</td>
+		<td>百度前端学院</td>
+		<td>4000</td>
+	</tr>
+</table>
+<input type="text" name="text" class="t1" />
+<input type="text" name="text1" class="t2" />
+<div class="box1">
+	<div class="b1"><a href="#">1</a></div>
+	<div class="b2"><a href="#">2</a></div>
+	<div class="b3"><a href="#">3</a></div>
+</div>
+<div class="box2">
+	<div class="box21"></div>
+	<div class="box22">
+		<div class="b1"><a href="#">1</a></div>
+		<div class="b2"><a href="#">2</a></div>
+		<div class="b3"><a href="#">3</a></div>
+	</div>
+</div>
+<div class="box3">
+	<div class="box31"></div>
+	<div class="box32">
+		<div class="b1"><a href="#">1</a></div>
+		<div class="b2"><a href="#">2</a></div>
+		<div class="b3"><a href="#">3</a></div>
+	</div>
+</div>
+<div class="box4">
+	<div class="box41">1</div>
+	<div class="box42">2</div>
+	<div class="box43">3</div>
+</div>
+<!-- <script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+$("tr:odd").css('background-color','white');
+$("tr:even").css("background-color","gray");	 
+</script> -->
+<!-- 用JQuery使单双行背景颜色不同 -->
+</body>
+</html>
